@@ -5,8 +5,6 @@
     */
 
 
-
-	include 'includes/session.php';						// Include the session script
 	logout();											// Call the logout function to terminate session
 	header('Location: index.php');						// Redirect to index page
 ?>
