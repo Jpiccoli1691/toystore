@@ -17,7 +17,7 @@
 		                                                    // SQL query to retrieve toy information based on the toy ID
 		$sql = "SELECT * 
 			FROM toy
-			WHERE toynum= :id;";	                        // :id is a placeholder for value provided later 
+			WHERE toyID= :id;";	                        // :id is a placeholder for value provided later 
 		                                                    // It's a parameterized query that helps prevent SQL injection attacks and ensures safer interaction with the database
 
 		                                                    // Execute the SQL query using the pdo function and fetch the result
