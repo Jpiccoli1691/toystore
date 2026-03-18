@@ -1,5 +1,5 @@
 <?php
-
+include 'includes/header.php';
   /* TO-DO: Include header.php
             Hint: header.php is inside the includes folder and already connects to the database
   */
@@ -26,7 +26,8 @@
               Hint: You defined authenticate() earlier in session.php
     */
 
-
+    $user = authenticate($pdo, $username, $password);
+    var_dump($user); // Debugging line to check the returned user data
 
     if ($user) {                               // If user data returned
       login($user);                           // Call the login function to update session data                                             

@@ -1,5 +1,6 @@
 <?php
-
+require_once 'database-connection.php';
+require_once 'session.php';
     /* TO-DO: Include database-connection.php to connect to the database
               Hint: Both header.php and database-connection.php are inside the includes folder
     */
@@ -45,7 +46,11 @@
                             Hint: Check session.php for a flag variable tracking login status
                                   Consider using the null-coalescing operator
                 -->
-                <li><a href="login.php">Log In</a></li>  
+                <li>
+                    <a href="<?= $logged_in ? 'logout.php' : 'login.php' ?>">
+                        <?= $logged_in ? 'Log Out' : 'Log In' ?>
+                    </a>
+                </li>  
                  
             </ul>
         </nav>

@@ -47,7 +47,20 @@
           3. Executes the SQL query using the pdo() helper function and fetches the result
           4. Returns the matching user row if found
 	*/
-	
+		function authenticate(PDO $pdo, string $username, string $password)
+	{
+	    $sql = "SELECT * 
+	            FROM customer
+	            WHERE username = :username
+	            AND password = :password;";
+
+	    $user = pdo($pdo, $sql, [
+	        'username' => $username,
+	        'password' => $password
+	    ])->fetch();
+
+	    return $user;
+	}
 	
 ?>
 
