@@ -1,5 +1,5 @@
 <?php
-include 'includes/header.php';
+
   /* TO-DO: Include header.php
             Hint: header.php is inside the includes folder and already connects to the database
   */
@@ -35,7 +35,7 @@ include 'includes/header.php';
       exit;                                 // Stop further code running 
     }
   }
-    
+include 'includes/header.php';    
 ?> 
 
 <div id="content" class="login-container animate-bottom">
