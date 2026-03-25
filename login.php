@@ -27,7 +27,7 @@ include 'includes/header.php';
     */
 
     $user = authenticate($pdo, $username, $password);
-    var_dump($user); // Debugging line to check the returned user data
+    //var_dump($user); // Debugging line to check the returned user data
 
     if ($user) {                               // If user data returned
       login($user);                           // Call the login function to update session data                                             
