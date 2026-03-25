@@ -1,5 +1,5 @@
 <?php
-include 'includes/header.php';
+require_once 'includes/session.php';
 
 	/* TO-DO: Include header.php and session.php
 			  Hint: Both header.php and session.php are inside the includes folder
@@ -12,4 +12,4 @@ include 'includes/header.php';
 	logout();											// Call the logout function to terminate session
 	header('Location: index.php');						// Redirect to index page
 	exit;												// Stop further code running
-?>
+
