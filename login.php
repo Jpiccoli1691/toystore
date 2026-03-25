@@ -1,5 +1,6 @@
 <?php
-
+require_once 'includes/database-connection.php';
+require_once 'includes/session.php';
   /* TO-DO: Include header.php
             Hint: header.php is inside the includes folder and already connects to the database
   */
